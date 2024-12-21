@@ -1,9 +1,13 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:roll_dice_game/dice_roller.dart';
 
 // ignore: must_be_immutable
 class GraiantColors extends StatelessWidget {
   GraiantColors(this.colors, {super.key});
   List<Color> colors;
+
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +17,7 @@ class GraiantColors extends StatelessWidget {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: colors)),
-      child: Center(
-          child: Image.asset(
-        "assets/images/dice-1.png",
-        width: 150,
-      )),
+      child: Center(child: DiceRoller()),
     );
   }
 }

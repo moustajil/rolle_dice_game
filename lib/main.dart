@@ -6,7 +6,11 @@ void main() {
     home: Scaffold(
       backgroundColor: Colors.deepPurple,
       body: GraiantColors(
-        [Colors.white, Colors.red, Colors.green],
+        [
+          const Color.fromARGB(255, 14, 7, 7),
+          const Color.fromARGB(255, 0, 0, 0),
+          const Color.fromARGB(255, 52, 75, 53)
+        ],
       ),
     ),
   ));
